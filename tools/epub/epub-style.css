@@ -1,0 +1,119 @@
+/* EPUB Stylesheet for Metronagon Media Books */
+
+/* Base Typography */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 1em;
+  text-align: justify;
+}
+
+/* Headings */
+h1 {
+  font-family: Georgia, serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  page-break-before: always;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+  text-indent: 1.5em;
+}
+
+p:first-of-type,
+h1 + p,
+h2 + p,
+hr + p {
+  text-indent: 0;
+}
+
+/* Scene breaks */
+hr {
+  border: none;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+hr::before {
+  content: "* * *";
+  letter-spacing: 0.5em;
+}
+
+/* Blockquotes (for epigraphs, etc.) */
+blockquote {
+  font-style: italic;
+  margin: 1.5em 2em;
+  padding-left: 1em;
+  border-left: 2px solid #ccc;
+}
+
+/* Emphasis */
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+/* Links (disabled styling) */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Page breaks */
+.page-break {
+  page-break-before: always;
+}
+
+/* Title page styling */
+.title-page {
+  text-align: center;
+  page-break-after: always;
+}
+
+.title-page h1 {
+  font-size: 2.5em;
+  margin-top: 30%;
+}
+
+.title-page .author {
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+/* Copyright page */
+.copyright {
+  font-size: 0.9em;
+  margin-top: 30%;
+}
+
+/* Dedication */
+.dedication {
+  font-style: italic;
+  text-align: center;
+  margin-top: 30%;
+}
+
+/* Chapter numbers (if separate from title) */
+.chapter-number {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5em;
+}
